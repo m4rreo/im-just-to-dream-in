@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>мой дневник</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="masonry-grid">
+
+            <!-- Card 1 -->
+            <div class="card" style="transform: rotate(-1deg); background-color: var(--brown-dark);">
+                <div class="tape"></div>
+                <img src="2819.jpg" class="card-img">
+                <h2 class="card-title1">привеееет</h2>
+                <p class="card-text1">мой маленький уголок в огромном интернете</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="music-player" style="transform: rotate(2deg);">
+                <div class="tape" style="transform: rotate(2deg); background-color: rgb(225, 223, 204)"></div>
+                <h2 class="card-title">сейчас слушаю</h2>
+                <div class="playlist-item">
+                    <span>hashtag by yves</span>
+                </div>
+                <div class="playlist-item">
+                    <span>forever by yeonjun</span>
+                </div>
+                <div class="playlist-item">
+                    <span>lithium by nirvana</span>
+                </div>
+                <div class="playlist-item">
+                    <span>rock the boat by xg</span>
+                </div>
+                <div class="playlist-item">
+                    <span>beaches by beebadoobe</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card quote-card" style="transform: rotate(3deg);">
+
+                <h2 class="card-title" style="font-size: 2rem;">"im just to dream in,<br>chase my drama"</h2>
+                <p style="font-size: 1.4rem;">— yves</p>
+                </svg>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="tape"></div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+                    <img src="2823.jpg" class="card-img photo-frame1" style="margin:0;">
+                    <img src="2824.jpg" class="card-img photo-frame2" style="margin:0; transform: rotate(5deg);">
+                </div>
+                <p class="card-text" style="margin-top: 10px; text-align: center;">i love soobie</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card"
+                style="background: var(--green-sage); border: 3px dashed var(--brown-dark); transform: rotate(-1.5deg);">
+                <div class="tape" style="background: rgba(255,255,255,0.8);"></div>
+                <h2 class="card-title" style="color: white;">планы</h2>
+                <ul
+                    style="padding-left: 20px; font-family: 'Caveat', cursive; font-size: 1.5rem; line-height: 1.8; color: white;">
+                    <li>слушать тхтишек</li>
+                    <li>ловить жески вайб</li>
+                    <li style="text-decoration: line-through; opacity: 0.5;">сделать страницу</li>
+                    <li>расчесать волосы 10 раз</li>
+                    <li>пожаловаться на жизнь</li>
+                </ul>
+                <div class="scribble" style="bottom: -5px; right: 10px; width: 60px; transform: rotate(-10deg);"></div>
+            </div>
+
+            <!-- Card  -->
+            <div class="card" style="background: var(--green-sage); color: white; border: 4px solid var(--brown-dark);">
+                <div class="tape"></div>
+                <h2 class="card-title" style="color: white;">me core</h2>
+                <img src="unnamed.png" style="width: 186px; height: 43px; padding-left: 50px;">
+                <p style="text-align: center; font-size: 1.6rem; line-height: 20px;">легкая контрольная по геометрии в
+                    кабинете с открытым окном</p>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card">
+                <div class="tape" style="background-color: var(--brown-dark); transform: rotate(2deg);"></div>
+                <img src="IMG_20250601_130900_990.jpg" alt="Polaroid" class="card-img"
+                    style="border: 1px solid #ccc; padding: 10px 10px 30px 10px; background: white;">
+                <p class="card-text" style="text-align: center; font-family: 'Caveat'; font-size: 1.4rem;">лето 2025</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>не копируй пожалуйста</p>
+            <div style="font-size: 0.8rem; margin-top: 5px;">shin ari 2026</div>
+        </footer>
+    </div>
+
+    <script>
+        cards.forEach(card => {
+            // Only apply if not already styled heavily in CSS
+            if (!card.style.transform || card.style.transform === 'transform: rotate(-1deg);') {
+                const randomRot = (Math.random() * 4 - 2).toFixed(1); // Between -2 and 2 deg
+                card.style.transform = `rotate(${randomRot}deg)`;
+            }
+        });
+        
+    </script>
+</body>
+
+</html>
